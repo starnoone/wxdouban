@@ -1,0 +1,53 @@
+/**index.wxss**/
+.container{
+  padding:0 20rpx;
+}
+.container .header{
+  padding:40rpx 40rpx;
+  background: #ccc;
+  width:100%;
+}
+.container .header .search{
+  background: #fff;
+  margin:0 20rpx;
+}
+.container .header .search input{
+  height:66rpx;
+  text-align: center;
+}
+
+.container .movie{
+  width:100%;
+}
+.container .movie .movie-nav{
+  display:flex;
+  width:100%;
+  margin-top:30rpx;
+}
+.container .movie .movie-nav .nav-item{
+  flex:1;
+  text-align:center;
+}
+.container .movie .movie-nav .nav-item.active{
+  color:red;
+}
+
+.container .movie .movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:20rpx;
+}
+.container .movie .movie-list .item{
+  width:33.333%;
+  text-align: center;
+}
+.container .movie .movie-list .item image{
+  width:86%;
+}
+.container .movie .movie-list .item text{
+  width:86%;
+  margin-top:10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

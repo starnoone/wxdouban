@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <view class='search'>
+      <input
+      placeholder='请输入需查找信息'
+      ></input>
+    </view>
+  </view>
+
+  <view class='movie content'>
+    <view class='movie-nav'>
+      <view class='nav-item active'>正在热映</view>
+      <view class='nav-item'>即将上映</view>
+      <view class='nav-item'>TOP250</view>
+    </view>
+    <view class='movie-list'>
+      <view class='item'>
+        <image
+        src='../../assets/images/p2518344818.webp'
+        mode='widthFix'
+        ></image>
+        <text>复仇者联盟3</text>
+      </view>
+      <view class='item'>
+        <image
+        src='../../assets/images/p2518344818.webp'
+        mode='widthFix'
+        ></image>
+      </view>
+      <view class='item'>
+        <image
+        src='../../assets/images/p2518344818.webp'
+        mode='widthFix'
+        ></image>
+      </view>
+    </view>
+  </view>
+</view>
