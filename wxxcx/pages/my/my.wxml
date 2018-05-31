@@ -1,0 +1,24 @@
+<!--pages/my/my.wxml-->
+<!-- S 底部导航 -->
+  <view class='bottomNav'>
+    <view class='item home'>
+    <navigator
+      url='/pages/index/index'
+      >
+        <image
+        src='../../assets/images/home.png'
+        ></image>
+        <text>首页</text>
+      </navigator></view>
+    <view class='item my on'>
+      <navigator
+      url='/pages/my/my'
+      >
+        <image
+        src='../../assets/images/my_on.png'
+        ></image>
+        <text>我的</text>
+      </navigator>
+    </view>
+  </view>
+  <!-- E 底部导航 -->

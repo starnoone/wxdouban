@@ -4,6 +4,7 @@
   scroll-y='true'
   bindscrolltolower='getMore'
   >
+    <!-- S 头部 -->
     <view class='header'>
       <view class='search'>
         <input
@@ -11,13 +12,19 @@
         ></input>
       </view>
     </view>
+    <!-- E 头部 -->
 
+    <!-- S 内容区 -->
     <view class='movie content'>
+      <!-- S 内容区导航 -->
       <view class='movie-nav'>
         <view class='nav-item active'>正在热映</view>
         <view class='nav-item'>即将上映</view>
         <view class='nav-item'>TOP250</view>
       </view>
+      <!-- E 内容区导航 -->
+
+      <!-- S 电影列表 -->
       <view class='movie-list'>
         <view class='item' wx:for="{{movie}}" wx:key="index">
           <image
@@ -27,6 +34,38 @@
           <text>{{item.title}}</text>
         </view>
       </view>
+      <!-- E 电影列表 -->
     </view>
+    <!-- E 内容区 -->
   </scroll-view>
+
+  <!-- S 底部导航 -->
+  <view class='bottomNav'>
+    <view class='item home on'>
+    <navigator
+      url='/pages/index/index'
+      >
+        <image
+        src='../../assets/images/home_on.png'
+        ></image>
+        <text>首页</text>
+      </navigator></view>
+    <view class='item my'>
+      <navigator
+      url='/pages/my/my'
+      >
+        <image
+        src='../../assets/images/my.png'
+        ></image>
+        <text>我的</text>
+      </navigator>
+    </view>
+  </view>
+  <!-- E 底部导航 -->
+
+  <!-- S 加载中 -->
+  <view class='loading' hidden='{{hiddenState}}'>
+    {{promptText}}
+  </view>
+  <!-- E 加载中 -->
 </view>

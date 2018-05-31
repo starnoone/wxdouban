@@ -1,10 +1,28 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+.bottomNav{
+  display:flex;
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background: #fff;
+  padding:10rpx 0;
+  z-index: 2000;
+}
+.bottomNav .item{
+  flex-grow: 1;
+  text-align: center;
+  font-size: 30rpx;
+}
+.bottomNav .item.on text{
+  color:#f01a43;
+}
+.bottomNav .item image{
+  width:60rpx;
+  height:60rpx;
+  margin:0 auto;
+}
+navigator{
+  display:flex;
+  flex-direction:column ;
+}
