@@ -1,0 +1,53 @@
+/* components/search/search.wxss */
+.search{
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  left:0;
+  top:0;
+  background: pink;
+  z-index: 2000;
+}
+.search .header{
+  background: #eee;
+  padding:20rpx 0;
+  display: flex;
+  justify-content: space-around;
+}
+.search .header image{
+  width:60rpx;
+  height:60rpx;
+}
+.search .header .input{
+  display:flex;
+  background: #fff;
+  width:500rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  height:60rpx;
+  text-align: center;
+}
+.search .header .input input{
+  flex:1;
+}
+.search .header .close{
+  background: #fff;
+  text-align:center;
+  margin-right:10rpx;
+}
+.search .header .close image{
+  width:40rpx;
+  height:40rpx;
+  margin-top:10rpx;
+}
+.search .content{
+  padding-top:20rpx;
+  padding-left:20rpx;
+}
+scroll-view{
+  height:100vh;
+}
+.search .content .item .title{
+  line-height: 60rpx;
+  font-size:30rpx;
+}

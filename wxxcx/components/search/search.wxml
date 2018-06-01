@@ -1,0 +1,31 @@
+<!--components/search/search.wxml-->
+<view class='search' hidden='{{searchState}}'>
+<scroll-view
+scroll-y='true'
+bindscrolltolower='searchMore'
+>
+  <!-- S 头部 -->
+  <view class='header'>
+    <image
+    src='../../assets/images/search.png'
+    ></image>
+    <view class="input">
+      <input
+      placeholder='请输入需要查询的信息'
+      onchange='search'
+      ></input>
+      <view class='close' bindtap='clearKey'>
+        <image src='../../assets/images/close.png'></image>
+      </view>
+    </view>
+    <text bindtap='hide'>取消</text>
+  </view>
+  <!-- E 头部 -->
+
+  <view class='content'>
+      <view class='item' wx:for="{{searchList}}" wx:key="index">
+        <view class='title'>{{item.title}}</view>
+      </view>
+  </view>
+ </scroll-view>
+</view>

@@ -44,6 +44,9 @@
   width:33.333%;
   text-align: center;
 }
+.container .movie .movie-list .item navigator{
+  text-align: center;
+}
 .container .movie .movie-list .item image{
   width:86%;
 }

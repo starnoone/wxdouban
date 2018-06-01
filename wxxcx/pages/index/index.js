@@ -33,6 +33,10 @@ Page({
       }
     });
   },
+  onReady:function(){
+    //获取组件实例
+    this.$searchCom = this.selectComponent('#searchCom');
+  },
   getMore: function () {//下拉加载更多
     var _self = this;
     var offset = this.data.pageIndex * this.data.count;
@@ -62,7 +66,11 @@ Page({
           _self.setData({ hiddenState: true });
         }
       });
-    }
-    
+    }  
+  },
+
+  //获取焦点显示search页面
+  search:function(){
+    this.$searchCom.show();
   }
 })

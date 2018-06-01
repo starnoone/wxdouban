@@ -1,0 +1,14 @@
+/* pages/detail/detail.wxss */
+.detail{
+  padding:10rpx;
+}
+.title{
+  text-align:center;
+  font-size: 40rpx;
+  line-height:80rpx;
+}
+.instructions{
+  line-height: 60rpx;
+  font-size: 28rpx;
+  text-indent: 2em;
+}

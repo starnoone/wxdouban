@@ -9,6 +9,7 @@
       <view class='search'>
         <input
         placeholder='请输入需查找信息'
+        bindfocus='search'
         ></input>
       </view>
     </view>
@@ -27,11 +28,13 @@
       <!-- S 电影列表 -->
       <view class='movie-list'>
         <view class='item' wx:for="{{movie}}" wx:key="index">
-          <image
-          src='../../assets/images/p2493372368.webp'
-          mode='widthFix'
-          ></image>
-          <text>{{item.title}}</text>
+          <navigator url='/pages/detail/detail?id={{item.id}}'>
+            <image
+            src='../../assets/images/p2493372368.webp'
+            mode='widthFix'
+            ></image>
+            <text>{{item.title}}</text>
+          </navigator>
         </view>
       </view>
       <!-- E 电影列表 -->
@@ -68,4 +71,8 @@
     {{promptText}}
   </view>
   <!-- E 加载中 -->
+
+  <!-- S search -->
+  <search id="searchCom"></search>
+  <!-- E search -->
 </view>
